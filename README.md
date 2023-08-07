@@ -1,6 +1,15 @@
 ## [Muhammad Faisal](https://au.linkedin.com/in/muhammadfaisal2)
 
-<img alt="certifications.png" src="assets/images/certifications.png" title="Certifications" height="150" width="100%"/>
+<a href="https://www.youracclaim.com/badges/b71591ec-8f99-41d5-8924-85da44e0f2d7/public_url">
+    <img alt="pmi-acp.png" src="assets/images/pmi-acp.png" title="PMI-ACP" height="150" width="24%"/>
+</a>
+<a href="https://www.scrum.org/user/284337">
+    <img alt="sps.png" src="assets/images/sps.png" title="SPS" height="150" width="24%"/>
+</a>
+<a href="https://www.scrum.org/user/284337">
+    <img alt="psm-1.png" src="assets/images/psm-1.png" title="PSM-I" height="150" width="24%"/>
+</a>
+<img alt="scjp.png" src="assets/images/scjp.png" title="SCJP" height="150" width="24%"/>
 
 Hi, its Faisal here, having around 15 years of solid experience working mainly on enterprise level projects. 
 
