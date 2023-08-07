@@ -2,7 +2,12 @@
 
 <img alt="certifications.png" src="assets/images/certifications.png" title="Certifications" height="150" width="100%"/>
 
-I believe that I am the best fit for the Java related roles like `Senior Software Engineer/Tech Lead/Engineering Manager`. 
+Hi, its Faisal here, having around 15 years of solid experience working mainly on enterprise level projects. 
+
+I have been working mostly on the development of distributed systems, where I have to work across the whole stack 
+including frontend, backend, infrastructure setup, setup up CI/CD etc.
+
+I believe that I am the best fit for the Java related roles like **Senior Software Engineer/Tech Lead/Engineering Manager**. 
 
 Why? Some of the reasons are given below:
 
@@ -47,3 +52,25 @@ just because I am instructed to do so, rather I follow them cause I can see some
 I also strongly believe that to get the real value out of anything, one should first understand the importance rather 
 than blindly following (e.g., **Mechanical Scrum vs. Professional Scrum**), and then he/she can use that 
 practice/principle with passion.
+
+## Organizations I have worked for
+* [Atlassian][atlassian-url]
+* [Vodafone Hutchison Australia][vha-url]
+* [National Broadband Network (NBN) Co, Australia][nbn-url]
+* [Department of Immigration and Citizenship (DIAC), Australia][diac-url]
+* [IBM Global Services, Australia][ibm-url]
+* [DiUS Consulting, Australia][dius-url]
+* [ResMed, Australia][resmed-url]
+* [NetSol Technologies Inc.][netsol-url]
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[atlassian-url]:https://www.atlassian.com/
+[vha-url]:https://www.vodafone.com.au/
+[nbn-url]:https://www.nbnco.com.au/
+[diac-url]:https://www.homeaffairs.gov.au/
+[ibm-url]:https://www.ibm.com/au-en
+[dius-url]:https://dius.com.au/
+[resmed-url]:https://www.resmed.com.au/
+[netsol-url]:https://www.netsolpk.com/
