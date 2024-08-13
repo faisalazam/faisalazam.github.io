@@ -95,6 +95,16 @@ testable and manageable ones, and follow Moscow technique to prioritise them to 
 Apart from that, I’ve also been focusing on looking for opportunities for automation which could either be project 
 related or process related as well.
 
+### What have I been doing after Atlassian? (Career Break)
+
+I finished with Atlassian in 2021 and below are some details related to the gap/break since then. 
+
+I went on a normal couple of months holiday in February 2021, but then some unfortunate series of events kept happening at sort of regular intervals which forced me to keep prolonging my stay to take care of family overseas. Apart from other family related responsibilities, I also helped my brother setting up his property business. 
+
+I had a personal project developed with Java 10 and springboot 2.0.5, which I upgraded last year to Java 20 and springboot 3.1.2 release. There were lot of other components and libraries which got upgraded as part of that major upgrade. 
+
+I also joined some IT/software related groups with the intention to help/answers others. I see it as another way of learning too.
+
 ### Tell me about a time when you needed to get things done without direction or supervision?
 
 There had been quite a few examples but I’ll use the implementation of API Gateway as an example. Problem was, 
