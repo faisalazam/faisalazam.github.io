@@ -1,14 +1,28 @@
-<footer class="text-center mt-5 bg-dark text-white py-3">
+<footer class="text-center mt-5 bg-dark text-white py-5">
     <p>&copy; <span id="year">2024</span> Muhammad Faisal | All rights reserved</p>
     <ul class="list-unstyled">
-<!--        <li><a href="http://twitter.com/your-twitter-handle" class="text-white">Twitter</a></li>-->
-        <li><a href="https://www.linkedin.com/in/muhammadfaisal2" class="text-white">LinkedIn</a></li>
-        <li><a href="https://github.com/faisalazam" class="text-white">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/muhammadfaisal2" class="text-white"><i class="fab fa-linkedin"></i>
+            LinkedIn</a></li>
+        <li><a href="https://github.com/faisalazam" class="text-white"><i class="fab fa-github"></i> GitHub</a></li>
     </ul>
+    <button id="back-to-top" class="btn btn-light"><i class="fa fa-arrow-up"></i></button>
 </footer>
 
 <script>
     if (document.getElementById('year')) {
         document.getElementById('year').textContent = new Date().getFullYear().toString();
+    }
+
+    // Back to Top Button Script
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("back-to-top").style.display = "block";
+        } else {
+            document.getElementById("back-to-top").style.display = "none";
+        }
+    }
+
+    document.getElementById("back-to-top").onclick = function () {
+        window.scrollTo({top: 0, behavior: 'smooth'});
     }
 </script>
