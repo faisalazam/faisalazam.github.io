@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
+
 <header>
     {% include navbar.html %}
 </header>
 
-<div class="container mt-5">
-    {{ content }}
+<!-- Main content wrapper -->
+<div class="content">
+    <div class="container mt-5">
+        <!-- Page content (this is where the content of the current page will go) -->
+        {{ content }}
+    </div>
 </div>
 
-<footer class="text-center mt-5 bg-dark text-white py-3">
+<footer>
     {% include footer.html %}
 </footer>
 
