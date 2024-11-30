@@ -1,7 +1,9 @@
 <footer class="text-center mt-5 bg-dark text-white py-3">
-    &copy; <span id="year"></span> Muhammad Faisal
+    &copy; <span id="year">2024</span> Muhammad Faisal
 </footer>
 
 <script>
-    document.getElementById('year').textContent = new Date().getFullYear().toString();
+    if (document.getElementById('year')) {
+        document.getElementById('year').textContent = new Date().getFullYear().toString();
+    }
 </script>
