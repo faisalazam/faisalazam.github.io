@@ -1,41 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Faisal's Portfolio - Software Engineer with 14 years of experience">
-    <meta name="keywords" content="portfolio, software engineer, JavaScript, developer, Muhammad Faisal, projects, skills, contact">
-    <meta name="author" content="Muhammad Faisal">
-    <meta property="og:title" content="Muhammad Faisal's Portfolio">
-    <meta property="og:description" content="A professional portfolio showcasing the skills, projects, and experience of Muhammad Faisal, a software engineer.">
-    <!--    <meta property="og:image" content="URL-to-image.jpg">-->
-    <meta property="og:url" content="https://faisalazam.github.io">
-    <!--    <meta name="twitter:card" content="summary_large_image">-->
-    <!--    <meta name="twitter:title" content="Muhammad Faisal's Portfolio">-->
-    <!--    <meta name="twitter:description" content="A professional portfolio showcasing the skills, projects, and experience of Muhammad Faisal, a software engineer.">-->
-    <!--    <meta name="twitter:image" content="URL-to-image.jpg">-->
-    <title>{{ page.title }}</title>
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/font-awesome-all.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-</head>
-<body>
+<html>
+{% include head.html %}
 
-<header>
-    {% include navbar.html %}
-</header>
+<body id="page-top" class="index">
+  {% include nav.html %}
+  {% include header.html %}
+  {% include portfolio_grid.html %}
+  {% include about.html %}
 
-<!-- Main content wrapper -->
-<div class="content">
-    <div class="container mt-5">
-        <!-- Page content (this is where the content of the current page will go) -->
-        {{ content }}
-    </div>
-</div>
+  {% if site.contact == "static" %}
+  {% include contact_static.html %}
+  {% elsif site.contact == "disqus" %}
+  {% include contact_disqus.html %}
+  {% else %}
+  {% include contact.html %}
+  {% endif %}
 
-{% include footer.html %}
-
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
+  {% include footer.html %}
+  {% include modals.html %}
+  {% include js.html %}
 </body>
+
 </html>
