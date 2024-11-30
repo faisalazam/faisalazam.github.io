@@ -1,0 +1,25 @@
+<!-- Certifications Grid Section -->
+<section id="certifications">
+  <div class="container portfolio-flex-grid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Certifications</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="portfolio-flex-row">
+      {% for certification in site.certifications %}
+      <div class="portfolio-flex-item portfolio-item">
+        <a href="#certificationModal-{{ certification.modal-id }}" class="certification-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-certificate fa-3x"></i>
+            </div>
+          </div>
+          <img src="../img/certifications/{{ certification.img }}" class="img-responsive" alt="{{ certification.alt }}">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

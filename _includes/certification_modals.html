@@ -1,0 +1,35 @@
+<!-- Certification Modals -->
+{% for certification in site.certifications %}
+<div class="portfolio-modal modal fade" id="certificationModal-{{ certification.modal-id }}" tabindex="-1" role="dialog"
+     aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>{{ certification.title }}</h2>
+                        <hr class="star-primary">
+                        <img src="../img/certifications/{{ certification.img }}" class="img-responsive img-centered"
+                             alt="{{ certification.alt }}">
+                        {% if certification.description %}
+                        <p>{{ certification.description }}</p>
+                        {% endif %}
+                        {% if certification.url %}
+                        <a href="{{ certification.url }}" target="_blank" rel="noopener noreferrer"
+                           class="btn btn-primary">View Certification</a>
+                        {% endif %}
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
