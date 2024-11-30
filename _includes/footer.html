@@ -1,3 +1,7 @@
 <footer class="text-center mt-5 bg-dark text-white py-3">
-    &copy; 2024 Muhammad Faisal
+    &copy; <span id="year"></span> Muhammad Faisal
 </footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear().toString();
+</script>
