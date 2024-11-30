@@ -1,0 +1,27 @@
+<!-- FAQ Modals -->
+{% for faq in site.faqs %}
+<div class="portfolio-modal modal fade" id="faqModal-{{ faq.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>{{ faq.question }}</h2>
+                        <hr class="star-primary">
+                        <img src="../img/faq/{{ faq.img }}" class="img-responsive img-centered" alt="{{ faq.alt }}">
+                        <p>{{ faq.answer }}</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            <i class="fa fa-times"></i> Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

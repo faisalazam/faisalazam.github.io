@@ -1,0 +1,25 @@
+<!-- FAQ Grid Section -->
+<section id="faq">
+    <div class="container portfolio-flex-grid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Frequently Asked Questions</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="portfolio-flex-row">
+            {% for faq in site.faqs %}
+            <div class="portfolio-flex-item portfolio-item">
+                <a href="#faqModal-{{ faq.modal-id }}" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-question-circle fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="../img/faq/{{ faq.img }}" class="img-responsive" alt="{{ faq.alt }}">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

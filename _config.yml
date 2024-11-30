@@ -65,3 +65,8 @@ defaults:
       type: "posts"
     values:
       permalink: ""
+
+collections:
+  faqs:
+    output: true
+    permalink: "/faq/:title/"
