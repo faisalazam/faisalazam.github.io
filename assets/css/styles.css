@@ -4,6 +4,10 @@ html, body {
     margin: 0;
 }
 
+html {
+    scroll-padding-top: 70px; /* Adjust based on your header height */
+}
+
 /* Set the main container to take at least 100% height */
 .content {
     min-height: 100%;
