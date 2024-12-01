@@ -16,7 +16,7 @@ recognized-by: Scrum Masters, Agile Coaches, Product Owners, Enterprise Agile Le
 statement: "The SPS certification demonstrates expertise in scaling Scrum and is essential for Scrum Masters or Agile Coaches working with large-scale agile transformations."
 complementary-certifications:
   - title: "Professional Scrum Master II (PSM II)"
-    url: https://www.scrum.org/certifications/professional-scrum-master-ii
+    url: https://www.scrum.org/assessments/professional-scrum-master-ii-certification
   - title: "Certified SAFe® 5 Agilist"
     url: https://www.scaledagile.com/certification/certified-safe-agilist/
 ---
