@@ -5,7 +5,7 @@ img: pmi-acp.png  # Badge image
 alt: PMI Agile Certified Practitioner Badge
 description: PMI Agile Certified Practitioner (PMI-ACP) demonstrates your ability to lead agile teams and execute projects using agile methodologies.
 impact-statement: This certification is widely recognized in the industry as a proof of your capability to manage and lead agile teams effectively, making you an asset to any agile transformation.
-url: https://www.youracclaim.com/badges/b71591ec-8f99-41d5-8924-85da44e0f2d7/public_url
+badge-url: https://www.youracclaim.com/badges/b71591ec-8f99-41d5-8924-85da44e0f2d7/public_url
 certification-url: https://www.pmi.org/certifications/agile-acp
 issuer: Project Management Institute (PMI)
 level: Practitioner
