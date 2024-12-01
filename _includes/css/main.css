@@ -207,6 +207,11 @@ section.success {
     max-width: 400px;
 }
 
+.interactive-section .portfolio-item .portfolio-link img {
+    width: 100%;
+    height: 256px;
+}
+
 .interactive-section .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
