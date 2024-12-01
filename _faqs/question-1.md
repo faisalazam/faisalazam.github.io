@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: faq1
-img: cabin.png
+img: brief_history.png
 alt: "FAQ Image"
 question: "Can you briefly describe your career history?"
 answer: "I’ve been in the software industry for last 15 years. Apart from technical skills, I’m certified professional
