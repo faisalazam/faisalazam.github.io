@@ -435,6 +435,8 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content img {
+    width: 256px;
+    height: 256px;
     margin-bottom: 30px;
 }
 
