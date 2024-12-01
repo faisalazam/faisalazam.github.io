@@ -5,7 +5,7 @@ img: psm-1.png  # Badge image
 alt: Professional Scrum Master Badge
 description: Validates fundamental knowledge of Scrum and the role of a Scrum Master.
 impact-statement: This certification demonstrates your understanding of Scrum principles and the Scrum Master's role in ensuring a successful Agile team. It's a key credential for those leading Scrum teams.
-url: https://www.scrum.org/user/284337
+badge-url: https://www.scrum.org/user/284337
 certification-url: https://www.scrum.org/assessments/professional-scrum-master-i-certification
 issuer: Scrum.org
 level: Foundation
