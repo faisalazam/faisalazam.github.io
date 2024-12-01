@@ -16,7 +16,7 @@ recognized-by: Top Industry Leaders, Agile Practitioners
 statement: "PMI-ACP demonstrates your ability to lead agile teams and deliver projects on time and within budget."
 complementary-certifications:
   - title: "Professional Scrum Master I (PSM I)"
-    url: https://www.scrum.org/certifications/professional-scrum-master-i-psm-i
+    url: https://www.scrum.org/assessments/professional-scrum-master-i-certification
   - title: "Scaled Professional Scrum (SPS)"
-    url: https://www.scrum.org/certifications/scaled-professional-scrum-sps
+    url: https://www.scrum.org/assessments/scaled-professional-scrum-certification
 ---
