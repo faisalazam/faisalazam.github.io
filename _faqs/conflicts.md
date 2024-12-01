@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: faq3
-img: circus.png
+img: conflicts.png
 alt: "FAQ Image"
 question: "Can you tell me about a time when you had conflicting deadlines, what did you do?"
 answer: "We usually work on projects and the timeline is always sort of packed with tasks or stories. Its just one of

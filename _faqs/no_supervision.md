@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: faq2
-img: cake.png
+img: no_supervision.png
 alt: "FAQ Image"
 question: "Can you tell me about a time when you needed to get things done without direction or supervision?"
 answer: "There had been quite a few examples, but I’ll use the implementation of API Gateway as an example. Problem
