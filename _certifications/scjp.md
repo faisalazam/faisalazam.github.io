@@ -5,7 +5,8 @@ img: scjp.png  # Badge image
 alt: Sun Certified Java Programmer Badge
 description: Demonstrates expertise in the fundamentals of Java programming.
 impact-statement: This certification validates a deep understanding of Java programming fundamentals and object-oriented design principles, crucial for building robust Java applications.
-url: https://www.oracle.com/java/technologies/javase-certifications.html
+url: https://education.oracle.com/oracle-certified-professional-java-se-8-programmer/trackp_357
+certification-url: https://education.oracle.com/oracle-certified-professional-java-se-8-programmer/trackp_357
 issuer: Oracle
 level: Associate
 skills: Java Programming, Object-Oriented Design, Java SE, Core Java, Data Structures, Exception Handling
