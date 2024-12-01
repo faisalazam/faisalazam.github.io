@@ -39,6 +39,16 @@
                         <p><strong>Coursework:</strong> {{ certification.coursework }}</p>
                         {% endif %}
 
+                        <!-- Recognized By -->
+                        {% if certification.recognized-by %}
+                        <p><strong>Recognized By:</strong> {{ certification.recognized-by }}</p>
+                        {% endif %}
+
+                        <!-- Statement -->
+                        {% if certification.statement %}
+                        <p><strong>Statement:</strong> "{{ certification.statement }}"</p>
+                        {% endif %}
+
                         <!-- Issuer -->
                         {% if certification.issuer %}
                         <p><strong>Issuer:</strong> {{ certification.issuer }}</p>
