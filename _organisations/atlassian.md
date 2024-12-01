@@ -5,8 +5,8 @@ img: atlassian_image.png
 alt: "Atlassian Image"
 title: "Senior Full Stack Software Engineer"
 company: "Atlassian"
-from: "October 2020"
-to: "February 2021"
+from: "2020-10"
+to: "2021-02"
 present: false
 org-url: "https://www.atlassian.com"
 responsibilities: "Developed microservices for activating and managing service provider integrations; worked on automating test executions across Atlassian products."

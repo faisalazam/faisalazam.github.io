@@ -5,8 +5,8 @@ img: resmed_image.png
 alt: "ResMed Image"
 title: "Senior Software Engineer | Senior Agile Java/JEE Consultant"
 company: "ResMed and DiUS Computing"
-from: "August 2011"
-to: "June 2012"
+from: "2011-08"
+to: "2012-06"
 present: false
 org-url: "https://www.resmed.com"
 responsibilities: "Designed and developed components using TDD and BDD; contributed to a cloud-based solution for managing patient therapy data."

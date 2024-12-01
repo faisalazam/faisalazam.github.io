@@ -1,4 +1,3 @@
-<!-- Organisations Grid Section -->
 <section id="organisations" style="color: #fff; background-color: #8e979f;" class="interactive-section">
     <div class="container portfolio-flex-grid">
         <div class="row">
@@ -8,7 +7,25 @@
             </div>
         </div>
         <div class="portfolio-flex-row">
-            {% for organisation in site.organisations %}
+            {% assign sorted_organisations = site.organisations | sort: "to" | reverse %}
+            {% assign ongoing_positions = site.organisations | where: "present", true %}
+            {% assign past_positions = site.organisations | where: "present", false | sort: "to" | reverse %}
+
+            {% for organisation in ongoing_positions %}
+            <div class="portfolio-flex-item portfolio-item">
+                <a href="#organisationModal-{{ organisation.modal-id }}" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-building fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="../img/organisations/{{ organisation.img }}" class="img-responsive" alt="{{ organisation.alt }}">
+                    <p class="organisation-title">{{ organisation.title }}</p>
+                </a>
+            </div>
+            {% endfor %}
+
+            {% for organisation in past_positions %}
             <div class="portfolio-flex-item portfolio-item">
                 <a href="#organisationModal-{{ organisation.modal-id }}" class="portfolio-link" data-toggle="modal">
                     <div class="caption">

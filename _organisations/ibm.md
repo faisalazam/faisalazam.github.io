@@ -5,8 +5,8 @@ img: ibm_image.png
 alt: "IBM Image"
 title: "Software Engineer | Java Consultant"
 company: "IBM Global Business Services"
-from: "March 2010"
-to: "December 2010"
+from: "2010-03"
+to: "2010-12"
 present: false
 org-url: "https://www.ibm.com"
 responsibilities: "Developed and maintained Java-based solutions for the Department of Immigration and Citizenship (DIAC), focusing on visa processing applications."
