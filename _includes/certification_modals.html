@@ -14,18 +14,63 @@
                     <div class="modal-body">
                         <h2>{{ certification.title }}</h2>
                         <hr class="star-primary">
+
+                        <!-- Badge Image -->
                         <img src="../img/certifications/{{ certification.img }}" class="img-responsive img-centered"
                              alt="{{ certification.alt }}">
+
+                        <!-- Description -->
                         {% if certification.description %}
-                        <p>{{ certification.description }}</p>
+                        <p><strong>Description:</strong> {{ certification.description }}</p>
                         {% endif %}
+
+                        <!-- Impact Statement -->
+                        {% if certification.impact-statement %}
+                        <p><strong>Impact Statement:</strong> {{ certification.impact-statement }}</p>
+                        {% endif %}
+
+                        <!-- Skills -->
+                        {% if certification.skills %}
+                        <p><strong>Skills Acquired:</strong> {{ certification.skills }}</p>
+                        {% endif %}
+
+                        <!-- Coursework -->
+                        {% if certification.coursework %}
+                        <p><strong>Coursework:</strong> {{ certification.coursework }}</p>
+                        {% endif %}
+
+                        <!-- Issuer -->
+                        {% if certification.issuer %}
+                        <p><strong>Issuer:</strong> {{ certification.issuer }}</p>
+                        {% endif %}
+
+                        <!-- Level -->
+                        {% if certification.level %}
+                        <p><strong>Level:</strong> {{ certification.level }}</p>
+                        {% endif %}
+
+                        <!-- Certification URL -->
                         {% if certification.url %}
-                        <a href="{{ certification.url }}" target="_blank" rel="noopener noreferrer"
-                           class="btn btn-primary">View Certification</a>
+                        <p><a href="{{ certification.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Official Certification</a></p>
                         {% endif %}
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
-                        </button>
+
+                        <!-- Certification URL -->
+                        {% if certification.certification-url %}
+                        <p><a href="{{ certification.certification-url }}" target="_blank" rel="noopener noreferrer" class="btn btn-info">Learn More About This Certification</a></p>
+                        {% endif %}
+
+                        <!-- Complementary Certifications -->
+                        {% if certification.complementary-certifications %}
+                        <p><strong>Complementary Certifications:</strong></p>
+                        <ul>
+                            {% for cert in certification.complementary-certifications %}
+                            <li><a href="{{ cert.url }}" target="_blank" rel="noopener noreferrer">{{ cert.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+
+                        <!-- Close Button -->
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
