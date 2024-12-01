@@ -6,6 +6,7 @@ alt: Scaled Professional Scrum Badge
 description: Demonstrates advanced knowledge of scaling Scrum using Nexus.
 impact-statement: This certification shows an advanced understanding of scaling Scrum practices to large teams or multiple teams, ensuring effective collaboration and delivery.
 url: https://www.scrum.org/user/284337
+certification-url: https://www.scrum.org/certifications/scaled-professional-scrum  # Link to official certification page
 issuer: Scrum.org
 level: Advanced
 skills: Scaling Scrum, Nexus, Scrum Mastery, Agile Leadership, Team Coordination, Multi-team Collaboration
