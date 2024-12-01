@@ -72,3 +72,6 @@ collections:
   faqs:
     output: true
     permalink: "/faq/:title/"
+  organisations:
+    output: true
+    permalink: "/organisation/:title/"

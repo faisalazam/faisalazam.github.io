@@ -1,0 +1,29 @@
+<!-- Organisation Modals -->
+{% for organisation in site.organisations %}
+<div class="portfolio-modal modal fade" id="organisationModal-{{ organisation.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>{{ organisation.title }} - {{ organisation.role }}</h2>
+                        <hr class="star-primary">
+                        <img src="../img/organisations/{{ organisation.img }}" class="img-responsive img-centered" alt="{{ organisation.alt }}">
+                        <p><strong>From:</strong> {{ organisation.from }} <strong>To:</strong> {{ organisation.to }} <strong>Present:</strong> {{ organisation.present }}</p>
+                        <p><strong>Responsibilities:</strong> {{ organisation.responsibilities }}</p>
+                        <p><strong>Tools Used:</strong> {{ organisation.tools }}</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            <i class="fa fa-times"></i> Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
