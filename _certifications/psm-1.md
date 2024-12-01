@@ -16,7 +16,7 @@ recognized-by: Agile Practitioners, Scrum Professionals
 statement: "PSM I certification validates fundamental knowledge of Scrum and equips you with the tools to help guide and support a Scrum team."
 complementary-certifications:
   - title: "PMI Agile Certified Practitioner (PMI-ACP)"
-    url: https://www.youracclaim.com/badges/b71591ec-8f99-41d5-8924-85da44e0f2d7/public_url
+    url: https://www.pmi.org/certifications/agile-acp
   - title: "Scaled Professional Scrum (SPS)"
-    url: https://www.scrum.org/certifications/scaled-professional-scrum-sps
+    url: https://www.scrum.org/assessments/scaled-professional-scrum-certification
 ---
