@@ -33,7 +33,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          Copyright © Muhammad Faisal 20{{ site.time | date: '%y' }}. All rights reserved.
+          Copyright &copy; Muhammad Faisal <span id="year">2024</span>. All rights reserved.
         </div>
       </div>
     </div>
@@ -46,3 +46,10 @@
     <i class="fa fa-chevron-up"></i>
   </a>
 </div>
+
+
+<script>
+  if (document.getElementById('year')) {
+      document.getElementById('year').textContent = new Date().getFullYear().toString();
+  }
+</script>
