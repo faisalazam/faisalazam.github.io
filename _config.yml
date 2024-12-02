@@ -69,6 +69,7 @@ defaults:
 collections:
   certifications:
     output: true
+    permalink: "/certification/:title/"
   faqs:
     output: true
     permalink: "/faq/:title/"
