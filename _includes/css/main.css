@@ -503,7 +503,6 @@ footer .footer-below {
     box-sizing: border-box; /* Ensures padding is accounted for in the width calculation */
 }
 
-/* Hide slides initially, and then show active ones */
 #testimonials .testimonial-slide {
     display: none;
     text-align: center;
@@ -519,23 +518,17 @@ footer .footer-below {
     transform: scale(1);
 }
 
-/* Blockquote for the testimonial */
 #testimonials blockquote {
     font-size: 1.3em;
     font-style: italic;
     color: #495057;
     line-height: 1.5;
     margin: 0;
-    background-color: #f8f9fa; /* Light background for the quote */
+    background-color: #f8f9fa;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: inline-block; /* Keeps it from taking up the entire width */
-    width: 90%; /* Ensures it's not too wide */
-    box-sizing: border-box; /* Accounts for padding inside width */
+    border-radius: 8px;
 }
 
-/* Author style */
 #testimonials .author {
     margin-top: 15px;
     font-weight: bold;
