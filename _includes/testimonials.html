@@ -1,0 +1,100 @@
+<section id="testimonials" class="interactive-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Testimonials</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="testimonial-slider">
+            {% assign sorted_testimonials = site.testimonials | sort: 'priority' %}
+            {% for testimonial in sorted_testimonials %}
+            <div class="testimonial-slide{% if forloop.first %} active{% endif %}">
+                <blockquote>"{{ testimonial.quote }}"</blockquote>
+                <div class="author">
+                    <p>{{ testimonial.author }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Controls -->
+        <div class="testimonial-slider-controls">
+            <button id="prev-slide" aria-label="Previous testimonial">&lt;</button>
+            <button id="next-slide" aria-label="Next testimonial">&gt;</button>
+        </div>
+
+        <!-- Dots -->
+        <div class="dots">
+            {% for testimonial in sorted_testimonials %}
+            <span class="dot{% if forloop.first %} active{% endif %}" data-slide="{{ forloop.index0 }}"></span>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".testimonial-slide");
+        const dots = document.querySelectorAll(".dot");
+        const prevButton = document.getElementById("prev-slide");
+        const nextButton = document.getElementById("next-slide");
+
+        let currentIndex = 0;
+        let slideInterval;
+
+        // Function to show the slide based on index
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+                dots[i].classList.toggle("active", i === index);
+            });
+        }
+
+        // Function to go to the next slide
+        function goToNextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Function to go to the previous slide
+        function goToPrevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Event listener for dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                currentIndex = index;
+                showSlide(currentIndex);
+                resetAutoSlide();  // Reset auto-slide when user clicks a dot
+            });
+        });
+
+        // Event listener for previous button
+        prevButton.addEventListener("click", () => {
+            goToPrevSlide();
+            resetAutoSlide();  // Reset auto-slide when user clicks prev
+        });
+
+        // Event listener for next button
+        nextButton.addEventListener("click", () => {
+            goToNextSlide();
+            resetAutoSlide();  // Reset auto-slide when user clicks next
+        });
+
+        // Function to reset auto-slide timer
+        function resetAutoSlide() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(goToNextSlide, 5000);  // Restart auto-slide after user interaction
+        }
+
+        // Start the auto-slide interval
+        slideInterval = setInterval(goToNextSlide, 5000);
+
+        // Initialize the first slide
+        showSlide(currentIndex);
+    });
+
+</script>

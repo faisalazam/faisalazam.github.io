@@ -75,3 +75,6 @@ collections:
   organisations:
     output: true
     permalink: "/organisation/:title/"
+  testimonials:
+    output: true
+    permalink: "/testimonial/:title/"
