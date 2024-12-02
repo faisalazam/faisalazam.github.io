@@ -34,7 +34,7 @@ footer:
   copyright: Muhammad Faisal
   location: Australia
   social: Around the Web
-  credits: ""
+  credits: "Quick Links"
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -52,7 +52,16 @@ address:
   - line: Sydney
   - line: New South Wales
 
-credits: ""
+credits: >
+  <ul style="list-style-type: none; padding: 0; margin: 0;">
+    <li><a style="color: #fff;" href="#about">About Me</a></li>
+    <li><a style="color: #fff;" href="#organisations">Experience</a></li>
+    <li><a style="color: #fff;" href="#portfolio">Portfolio</a></li>
+    <li><a style="color: #fff;" href="#certifications">Certifications</a></li>
+    <li><a style="color: #fff;" href="#faqs">FAQs</a></li>
+    <li><a style="color: #fff;" href="#contact">Contact</a></li>
+    <li><a style="color: #fff;" href="../assets/docs/Detailed_Resume.docx" download><i class="fa fa-download"></i> Resume</a></li>
+  </ul>
 
 # Build settings
 markdown: kramdown
