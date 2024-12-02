@@ -19,4 +19,5 @@ complementary-certifications:
     url: https://www.scrum.org/assessments/professional-scrum-master-ii-certification
   - title: "Certified SAFe® 5 Agilist"
     url: https://www.scaledagile.com/certification/certified-safe-agilist/
+priority: 110  # Highest priority, i.e., cert with priority 100 will be shown before cert with priority 101...
 ---

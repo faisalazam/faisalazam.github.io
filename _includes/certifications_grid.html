@@ -1,4 +1,3 @@
-<!-- Certifications Grid Section -->
 <section id="certifications" style="color: #fff; background-color: #abb6c1;" class="interactive-section">
   <div class="container portfolio-flex-grid">
     <div class="row">
@@ -8,7 +7,8 @@
       </div>
     </div>
     <div class="portfolio-flex-row">
-      {% for certification in site.certifications %}
+      {% assign sorted_certifications = site.certifications | sort: "priority" %}
+      {% for certification in sorted_certifications %}
       <div class="portfolio-flex-item portfolio-item">
         <a href="#certificationModal-{{ certification.modal-id }}" class="portfolio-link" data-toggle="modal">
           <div class="caption">

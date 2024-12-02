@@ -19,4 +19,5 @@ complementary-certifications:
     url: https://www.pmi.org/certifications/agile-acp
   - title: "Scaled Professional Scrum (SPS)"
     url: https://www.scrum.org/assessments/scaled-professional-scrum-certification
+priority: 120  # Highest priority, i.e., cert with priority 100 will be shown before cert with priority 101...
 ---

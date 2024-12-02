@@ -19,4 +19,5 @@ complementary-certifications:
     url: https://education.oracle.com/java-se-8-programmer-ii/pexam_1Z0-809
   - title: "Certified Kubernetes Application Developer (CKAD)"
     url: https://www.cncf.io/certification/ckad/
+priority: 130  # Highest priority, i.e., cert with priority 100 will be shown before cert with priority 101...
 ---

@@ -19,4 +19,5 @@ complementary-certifications:
     url: https://www.scrum.org/assessments/professional-scrum-master-i-certification
   - title: "Scaled Professional Scrum (SPS)"
     url: https://www.scrum.org/assessments/scaled-professional-scrum-certification
+priority: 100  # Highest priority, i.e., cert with priority 100 will be shown before cert with priority 101...
 ---
