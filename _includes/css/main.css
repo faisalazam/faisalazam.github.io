@@ -1,8 +1,42 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+
+:root {
+  --primary-hue: 190;
+  --primary-saturation: 10%;
+  --base-lightness: 25%;
+}
+
+header {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 10%));
+}
+
+/* Section Backgrounds */
+#about {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 15%));
+}
+
+#testimonials {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 20%));
+}
+
+#organisations {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 25%));
+}
+
+#portfolio {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 20%));
+}
+
+#certifications {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 15%));
+}
+
+#faqs {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 10%));
+}
+
+#contact {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 5%));
+}
 
 body {
     overflow-x: hidden;
@@ -83,7 +117,6 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #{{ site.color.primary }};
 }
 
 header .container {
