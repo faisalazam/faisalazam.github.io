@@ -669,7 +669,20 @@ footer .footer-below {
     -webkit-transform: translateZ(0);
 }
 
-/* General Styles */
+/* Section Background Styling */
+#testimonials {
+    background: linear-gradient(to right, #1d3557, #457b9d); /* Adjusted gradient colors for consistency */
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+#testimonials h2 {
+    color: #ffcc00; /* Accent color for the heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Slider */
 #testimonials .testimonial-slider {
     position: relative;
     max-width: 800px;
@@ -678,8 +691,8 @@ footer .footer-below {
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Added padding to prevent content from touching edges */
-    box-sizing: border-box; /* Ensures padding is accounted for in the width calculation */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #testimonials .testimonial-slide {
@@ -695,6 +708,7 @@ footer .footer-below {
     display: block;
     opacity: 1;
     transform: scale(1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Highlight active slide */
 }
 
 #testimonials blockquote {
@@ -737,7 +751,7 @@ footer .footer-below {
     padding: 10px;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    display: inline-flex; /* Ensures button size is based on its content */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
@@ -795,7 +809,28 @@ footer .footer-below {
     }
 }
 
-/* Responsive */
+#testimonials .dot:hover {
+    transform: scale(1.5);
+    background-color: #0056b3;
+}
+
+/* LinkedIn Recommendations Link */
+#testimonials .linkedin-recommendations {
+    margin-top: 20px;
+}
+
+#testimonials .linkedin-recommendations a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#testimonials .linkedin-recommendations a:hover {
+    color: #e6b800;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     #testimonials blockquote {
         font-size: 1.1em;
@@ -812,27 +847,29 @@ footer .footer-below {
 
     #testimonials .dot {
         width: 10px;
-        height: 10px;
+                height: 10px;
+        margin: 0 4px;
     }
 }
 
+/* Ensure proper spacing and padding for smaller devices */
 @media (max-width: 480px) {
     #testimonials .testimonial-slider {
         padding: 15px;
     }
 
+    #testimonials h2 {
+        font-size: 2em;
+    }
+
     #testimonials blockquote {
         font-size: 1em;
-        line-height: 1.4;
+        padding: 15px;
     }
 
     #testimonials button {
         font-size: 1.2em;
         padding: 6px;
-    }
-
-    #testimonials .dot {
-        margin: 0 4px;
     }
 }
 
