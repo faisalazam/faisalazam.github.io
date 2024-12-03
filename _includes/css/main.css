@@ -230,6 +230,20 @@ section.success {
     margin: 0 0 15px;
 }
 
+.interactive-section .portfolio-item .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text inside the container */
+}
+
+.interactive-section .portfolio-item .portfolio-content .organisation-title {
+    margin-top: 10px; /* Space between the image and text */
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #fff; /* Text color */
+    word-wrap: break-word; /* Ensures long words don't break layout */
+}
+
 .interactive-section .portfolio-item .portfolio-link {
     display: block;
     position: relative;

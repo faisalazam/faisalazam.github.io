@@ -13,29 +13,33 @@
 
             {% for organisation in ongoing_positions %}
             <div class="portfolio-flex-item portfolio-item">
-                <a href="#organisationModal-{{ organisation.modal-id }}" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-building fa-3x"></i>
+                <div class="portfolio-content">
+                    <a href="#organisationModal-{{ organisation.modal-id }}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-building fa-3x"></i>
+                            </div>
                         </div>
-                    </div>
-                    <img src="../img/organisations/{{ organisation.img }}" class="img-responsive" alt="{{ organisation.alt }}">
-                </a>
-                <p class="organisation-title">{{ organisation.title }}</p>
+                        <img src="../img/organisations/{{ organisation.img }}" class="img-responsive" alt="{{ organisation.alt }}">
+                    </a>
+                    <p class="organisation-title">{{ organisation.title }}</p>
+                </div>
             </div>
             {% endfor %}
 
             {% for organisation in past_positions %}
             <div class="portfolio-flex-item portfolio-item">
-                <a href="#organisationModal-{{ organisation.modal-id }}" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-building fa-3x"></i>
+                <div class="portfolio-content">
+                    <a href="#organisationModal-{{ organisation.modal-id }}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-building fa-3x"></i>
+                            </div>
                         </div>
-                    </div>
-                    <img src="../img/organisations/{{ organisation.img }}" class="img-responsive" alt="{{ organisation.alt }}">
-                </a>
-                <p class="organisation-title">{{ organisation.title }}</p>
+                        <img src="../img/organisations/{{ organisation.img }}" class="img-responsive" alt="{{ organisation.alt }}">
+                    </a>
+                    <p class="organisation-title">{{ organisation.title }}</p>
+                </div>
             </div>
             {% endfor %}
         </div>
