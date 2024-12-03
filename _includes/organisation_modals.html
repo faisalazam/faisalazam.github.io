@@ -15,7 +15,14 @@
                         <hr class="star-primary">
                         <img src="../img/organisations/{{ organisation.img }}" class="img-responsive img-centered" alt="{{ organisation.alt }}">
                         <p><strong>Company:</strong> <a href="{{ organisation.org-url }}" target="_blank">{{ organisation.company }}</a></p>
-                        <p><strong>Time Period:</strong> {{ organisation.from }} - {{ organisation.to }}</p>
+                        <p><strong>Time Period:</strong>
+                            {{ organisation.from }} -
+                            {% if organisation.present %}
+                            Present
+                            {% else %}
+                            {{ organisation.to }}
+                            {% endif %}
+                        </p>
                         <p><strong>Tools Used:</strong> {{ organisation.tools }}</p>
                         <p><strong>Responsibilities:</strong> {{ organisation.responsibilities }}</p>
                         <button type="button" class="btn btn-default" data-dismiss="modal">
