@@ -1,33 +1,24 @@
-
 :root {
   --primary-hue: 190;
   --primary-saturation: 10%;
   --base-lightness: 25%;
+  --increment-step: 5%;
 }
 
 header {
   background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 10%));
 }
 
-/* Section Backgrounds */
-#about {
+#about, #certifications {
   background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 15%));
 }
 
-#testimonials {
+#testimonials, #portfolio {
   background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 20%));
 }
 
 #organisations {
   background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 25%));
-}
-
-#portfolio {
-  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 20%));
-}
-
-#certifications {
-  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 15%));
 }
 
 #faqs {
