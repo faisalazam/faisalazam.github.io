@@ -1,36 +1,8 @@
-:root {
-  --primary-hue: 190;
-  --primary-saturation: 10%;
-  --base-lightness: 25%;
-  --increment-step: 5%;
-}
-
-header {
-  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 10%));
-}
-
-#about, #certifications {
-  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 15%));
-}
-
-#testimonials, #portfolio {
-  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 20%));
-}
-
-#organisations {
-  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 25%));
-}
-
-#faqs {
-  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 10%));
-}
-
-#contact {
-  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--base-lightness) + 5%));
-}
 
 body {
     overflow-x: hidden;
+    background: linear-gradient(to right, #283048, #859398);
+    background-attachment: fixed; /* background-attachment should be after background, otherwise it won't work. */
 }
 
 p {
@@ -111,7 +83,6 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: linear-gradient(to right, #283048, #859398);
     padding-top: 150px;
     padding-bottom: 100px;
     position: relative;
@@ -256,7 +227,6 @@ section.success {
 
 /* General section styling */
 #about {
-    background: linear-gradient(to right, #283048, #859398); /* Subtle gradient */
     padding: 60px 0;
     color: #fff;
 }
@@ -668,13 +638,13 @@ footer .footer-below {
 
 /* Section Background Styling */
 #testimonials {
-    background: linear-gradient(to right, #1d3557, #457b9d); /* Adjusted gradient colors for consistency */
     color: #ffffff;
     padding: 80px 0;
+    background: linear-gradient(to right, #1d3557, #457b9d);
 }
 
 #testimonials h2 {
-    color: #ffcc00; /* Accent color for the heading */
+    color: #ffcc00;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
