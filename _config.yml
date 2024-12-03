@@ -88,3 +88,6 @@ collections:
   testimonials:
     output: true
     permalink: "/testimonial/:title/"
+
+exclude:
+  - .idea
