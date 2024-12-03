@@ -361,17 +361,14 @@ section.success {
 }
 
 .interactive-section .portfolio-item .portfolio-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers content horizontally */
-    text-align: center; /* Centers text inside the container */
+    text-align: center;
 }
 
 .interactive-section .portfolio-item .portfolio-content .organisation-title {
-    margin-top: 10px; /* Space between the image and text */
-    font-size: 1rem; /* Adjust font size as needed */
-    color: #fff; /* Text color */
-    word-wrap: break-word; /* Ensures long words don't break layout */
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    word-wrap: break-word;
 }
 
 .interactive-section .portfolio-item .portfolio-link {
