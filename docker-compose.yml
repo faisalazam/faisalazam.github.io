@@ -6,8 +6,4 @@ services:
       - "4000:4000"      # Jekyll's default port
       - "35729:35729"    # Live reload port
     volumes:
-      - .:/srv/jekyll
-    stdin_open: true
-    tty: true
-    restart: always
-    user: root
+      - ./:/srv/jekyll

@@ -29,5 +29,5 @@ CMD ["/bin/sh", "-c", "\
         jekyll new . --force; \
     fi; \
     echo 'Starting Jekyll server with livereload...'; \
-    jekyll serve --host 0.0.0.0 --livereload \
+    jekyll serve --host 0.0.0.0 --incremental --livereload --force_polling \
 "]
