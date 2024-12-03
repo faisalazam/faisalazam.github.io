@@ -35,12 +35,12 @@ h6 {
 
 hr.star-light,
 hr.star-primary {
-    height: 4px;
+    height: 3px;
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
     border: 0;
-    border-top: solid 5px;
+    border-top: solid 3px;
     text-align: center;
     overflow: visible;
     background-color: #ffcc00;
@@ -54,7 +54,7 @@ hr.star-primary:after {
     top: -.8em;
     padding: 0 .25em;
     font-family: FontAwesome;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 hr.star-light {
@@ -63,6 +63,8 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
+    border-radius: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #{{ site.color.secondary }};
 }
 
@@ -71,8 +73,10 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
-    color: #{{ site.color.secondary }};
+    border-radius: 30%;
     background-color: #fff;
+    color: #{{ site.color.secondary }};
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .img-centered {
@@ -207,7 +211,9 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    color: #ffcc00;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 section.success {
@@ -229,14 +235,6 @@ section.success {
 #about {
     padding: 60px 0;
     color: #fff;
-}
-
-/* Section heading */
-#about h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #f9f9f9;
 }
 
 /* Subheadings */
@@ -266,11 +264,12 @@ section.success {
 }
 
 #about ul li {
-    font-size: 1.1rem;
+    list-style: none;
     line-height: 1.6;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
     position: relative;
     padding-left: 25px;
+    margin-bottom: 10px;
 }
 
 #about ul li:before {
@@ -641,12 +640,6 @@ footer .footer-below {
     color: #ffffff;
     padding: 80px 0;
     background: linear-gradient(to right, #1d3557, #457b9d);
-}
-
-#testimonials h2 {
-    color: #ffcc00;
-    font-size: 2.5em;
-    margin-bottom: 20px;
 }
 
 /* Testimonial Slider */
