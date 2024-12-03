@@ -27,6 +27,7 @@ color:
   primary: b27482  # Primary color for your portfolio (you can adjust this to your preference)
   primary-rgb: "24,288,156"  # RGB value for the primary color
   secondary: 2c3e50  # Secondary color
+  secondary-rgb: "44, 62, 80"  # Secondary color
   secondary-dark: 233140  # Darker shade of the secondary color
 
 # Footer settings
