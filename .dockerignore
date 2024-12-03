@@ -1,0 +1,39 @@
+# Exclude Ruby-related files
+
+vendor/
+.bundle/
+
+# Exclude Jekyll build output
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+_jekyll/
+
+# Exclude temporary or system files
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Exclude logs and backups
+*.log
+*.bak
+*.old
+*.tmp
+
+# Node-related files (if using npm/yarn for assets)
+node_modules/
+
+# Git-related files
+.git/
+.gitignore
+
+# Operating system files
+*.~*  # Temporary files created by editors
+
+# IDEs and Editors
+.vscode/
+.idea/
