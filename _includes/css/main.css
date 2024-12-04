@@ -1,22 +1,44 @@
-/* Body Animation */
+/* Body Animation with Glow */
 body {
     overflow-x: hidden;
-    background: linear-gradient(140deg, #283048, #859398, #89cbe2, #283048);
+    background: radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.15), transparent 60%),
+                linear-gradient(120deg, #283048, #859398, #89cbe2, #283048);
     background-size: 300% 300%;
     background-attachment: fixed; /* background-attachment should be after background, otherwise it won't work. */
-    animation: enhancedBodyGradient 12s ease infinite;
+    position: relative;
+    animation: glowingBodyGradient 16s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
 
-/* Keyframes for Body */
-@keyframes enhancedBodyGradient {
+/* Overlay Glow Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 80%);
+    mix-blend-mode: soft-light;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Smooth Gradient Animation */
+@keyframes glowingBodyGradient {
     0% {
-        background-position: 50% 0%;
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 25% 75%;
     }
     50% {
-        background-position: 50% 100%;
+        background-position: 50% 50%;
+    }
+    75% {
+        background-position: 75% 25%;
     }
     100% {
-        background-position: 50% 0%;
+        background-position: 0% 0%;
     }
 }
 
@@ -227,24 +249,25 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    background: linear-gradient(120deg, #283048, #89cbe2, #859398, #283048);
+    background: radial-gradient(circle at 20% 20%, #89cbe2, transparent 60%),
+                linear-gradient(120deg, #283048, #859398, #89cbe2, #283048);
     background-size: 200% 200%;
     background-attachment: fixed; /* background-attachment should be after background, otherwise it won't work. */
     position: relative;
     z-index: 2;
-    animation: enhancedNavbarGradient 8s ease infinite;
+    animation: layeredNavbarGradient 10s ease infinite;
 }
 
 /* Keyframes for Navbar */
-@keyframes enhancedNavbarGradient {
+@keyframes layeredNavbarGradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 100%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
 }
 
@@ -603,8 +626,11 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background: linear-gradient(to right, #283048, #89cbe2);
+    background: radial-gradient(circle at 80% 80%, #89cbe2, transparent 70%),
+                linear-gradient(to right, #283048, #89cbe2, #859398, #283048);
+    background-size: 200% 200%;
     background-attachment: fixed; /* background-attachment should be after background, otherwise it won't work. */
+    animation: footerAboveAnimation 12s ease infinite;
 }
 
 footer .footer-col {
@@ -613,8 +639,37 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background: linear-gradient(to left, #283048, #89cbe2);
+    background: radial-gradient(circle at 20% 20%, #89cbe2, transparent 70%),
+                linear-gradient(to left, #283048, #859398, #89cbe2, #283048);
+    background-size: 200% 200%;
     background-attachment: fixed; /* background-attachment should be after background, otherwise it won't work. */
+    animation: footerBelowAnimation 12s ease infinite;
+}
+
+/* Keyframes for Footer Above */
+@keyframes footerAboveAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Keyframes for Footer Below */
+@keyframes footerBelowAnimation {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
 }
 
 footer .footer-below .rights-reserved {
