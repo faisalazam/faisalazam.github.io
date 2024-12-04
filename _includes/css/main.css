@@ -587,6 +587,18 @@ footer .footer-below {
     background-attachment: fixed; /* background-attachment should be after background, otherwise it won't work. */
 }
 
+footer .footer-below .rights-reserved {
+  display: inline-block;
+}
+
+@media (max-width: 544px) {
+  footer .footer-below .rights-reserved {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
 .btn-social {
     display: inline-block;
     width: 50px;
