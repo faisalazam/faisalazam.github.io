@@ -124,6 +124,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
+    padding-top: 180px;
     padding-bottom: 100px;
     position: relative;
 }
@@ -189,9 +190,15 @@ header .intro-text .skills {
     }
 }
 
+@media (max-width: 992px) {
+    header {
+        padding-top: 100px;
+    }
+}
+
 @media (min-width: 768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 15px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -253,7 +260,6 @@ header .intro-text .skills {
                 linear-gradient(120deg, #283048, #859398, #89cbe2, #283048);
     background-size: 200% 200%;
     background-attachment: fixed; /* background-attachment should be after background, otherwise it won't work. */
-    position: relative;
     z-index: 2;
     animation: layeredNavbarGradient 10s ease infinite;
 }
@@ -340,7 +346,7 @@ section.success {
 
 /* Paragraphs */
 #about p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     margin-bottom: 20px;
 }
@@ -354,7 +360,7 @@ section.success {
 #about ul li {
     list-style: none;
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     position: relative;
     padding-left: 25px;
     margin-bottom: 10px;
