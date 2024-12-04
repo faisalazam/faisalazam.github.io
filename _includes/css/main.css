@@ -1,16 +1,14 @@
 /* Body Animation */
 body {
     overflow-x: hidden;
-    background: radial-gradient(circle at top, #89cbe2 0%, #859398 40%, #283048 100%),
-                linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
-    background-blend-mode: multiply;
-    background-size: 400% 400%;
+    background: linear-gradient(140deg, #283048, #859398, #89cbe2, #283048);
+    background-size: 300% 300%;
     background-attachment: fixed; /* background-attachment should be after background, otherwise it won't work. */
-    animation: bodyGradientAnimation 10s ease infinite;
+    animation: enhancedBodyGradient 12s ease infinite;
 }
 
 /* Keyframes for Body */
-@keyframes bodyGradientAnimation {
+@keyframes enhancedBodyGradient {
     0% {
         background-position: 50% 0%;
     }
@@ -229,18 +227,16 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    background: linear-gradient(to right, #283048, #89cbe2),
-                linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
-    background-blend-mode: overlay;
-    background-size: 300% 300%;
+    background: linear-gradient(120deg, #283048, #89cbe2, #859398, #283048);
+    background-size: 200% 200%;
     background-attachment: fixed; /* background-attachment should be after background, otherwise it won't work. */
     position: relative;
     z-index: 2;
-    animation: navbarGradientAnimation 8s ease infinite;
+    animation: enhancedNavbarGradient 8s ease infinite;
 }
 
 /* Keyframes for Navbar */
-@keyframes navbarGradientAnimation {
+@keyframes enhancedNavbarGradient {
     0% {
         background-position: 0% 50%;
     }
