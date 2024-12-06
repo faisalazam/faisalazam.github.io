@@ -81,6 +81,7 @@ hr.star-primary {
     text-align: center;
     overflow: visible;
     background-color: #ffcc00;
+    transition: all 0.3s ease;
 }
 
 hr.star-light:after,
@@ -88,10 +89,11 @@ hr.star-primary:after {
     content: "\f005";
     display: inline-block;
     position: relative;
-    top: -.8em;
-    padding: 0 .25em;
+    top: -0.8em;
+    padding: 0 0.25em;
     font-family: FontAwesome;
     font-size: 1.5em;
+    transition: all 0.3s ease;
 }
 
 hr.star-light {
@@ -114,6 +116,30 @@ hr.star-primary:after {
     background-color: #fff;
     color: #{{ site.color.secondary }};
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+hr.star-light:hover {
+    border-color: #{{ site.color.secondary }};
+    background-color: #{{ site.color.secondary }};
+}
+
+hr.star-light:hover:after {
+    transform: scale(1.2);
+    color: #ffcc00;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+hr.star-primary:hover {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+hr.star-primary:hover:after {
+    transform: scale(1.2);
+    color: #fff;
+    background-color: #{{ site.color.secondary }};
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .img-centered {
