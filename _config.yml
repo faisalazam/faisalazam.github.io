@@ -2,6 +2,7 @@
 title: Muhammad Faisal
 email: your-email@domain.com
 url: https://faisalazam.github.io/
+baseurl: ""  # This ensures the site is served from the root path
 description: "A seasoned software engineer's portfolio"
 keywords: "Software Engineer, Web Developer, Portfolio, Java, Spring, AWS, Software Development"
 skills: "Fearless Architect of High-Impact, Scalable Software Solutions | Champion of Agile Excellence and Modern Development Practices"
@@ -67,14 +68,6 @@ credits: >
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-# For posts (adjust if you need specific post-related settings)
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: ""
 
 collections:
   certifications:
