@@ -82,6 +82,9 @@ collections:
   testimonials:
     output: true
     permalink: "/testimonial/:title/"
+  blogs:
+    output: true
+    permalink: "/blogs/:title/"
 
 exclude:
   - .idea
