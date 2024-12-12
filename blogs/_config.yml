@@ -1,0 +1,48 @@
+title: "Faisal's Blog"
+description: "Thoughts and Stories from a Software Engineer"
+baseurl: "/blogs"
+theme: jekyll-theme-minimal # Different theme from the root site
+markdown: kramdown
+permalink: /:title/
+
+# Keywords and metadata
+keywords: "Software Engineer, Blog, Java, Spring, AWS, Technology, Software Development"
+meta_author: Faisal Muhammad
+google_verify: "yTthMbVAt2XxKiMbHHs3kwdQbbblfAwB5bfPQwxnaZk"
+bing_verify: "89D0325C86744CAC39F4BE9C28AE8865"
+author: "Faisal Muhammad"
+
+# Pagination
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Default layout for blog posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: blog_post # Use a custom layout for blog posts
+
+# Exclude unnecessary files or folders
+exclude:
+  - .idea
+
+# Footer settings
+footer:
+  copyright: Muhammad Faisal
+  location: Australia
+  social: Around the Web
+  credits: "Visit My Portfolio at [Muhammad Faisal](https://faisalazam.github.io/)"
+
+# Social links for blogs (can be different from the root site if desired)
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/muhammadfaisal2
+  - title: github
+    url: https://github.com/faisalazam
+  - title: twitter
+    url: https://twitter.com/yourusername # Add Twitter if applicable
+
+# Analytics (use the same IDs as your main site)
+google_analytics: UA-XXXXX-Y # Replace with your actual Google Analytics tracking ID
